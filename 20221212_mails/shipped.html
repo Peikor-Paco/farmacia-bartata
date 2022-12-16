@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<style>
+@font-face {
+    font-family: AvenirLTStd-Black;
+    src: url("https://farmaciabarata.es/themes/farmaTheme/font/AvenirLTStd-Black.otf") format("opentype");
+}
+@font-face {
+    font-family: AvenirLTStd-Heavy;
+    src: url("https://farmaciabarata.es/themes/farmaTheme/font/AvenirLTStd-Heavy.otf") format("opentype");
+}
+@font-face {
+    font-family: AvenirLTStd-Medium;
+    src: url("https://farmaciabarata.es/themes/farmaTheme/font/AvenirLTStd-Medium.otf") format("opentype");
+}
+</style>	
+
+</head><body>
+<div style="margin-bottom:40px;font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -moz-font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -webkit-font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -o-font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -ms-font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+	<table style="margin: auto; width: 100%; max-width: 740px;padding-top: 2em;">
+		<tbody>
+			<tr>
+				<td style="padding-bottom: 2em;">
+					<table border="0" style="width: 100%; max-width: 680px; margin: auto; background-color: white;">
+						<tbody>
+						<tr style="background-color: white;">
+							<td style="padding: 25px 0 10px 0; margin: 0; font-size: 26px; font-weight: bold; text-align: center; color: #EAA73B;font-family: AvenirLTStd-Black,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -moz-font-family: AvenirLTStd-Black,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -webkit-font-family: AvenirLTStd-Black,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -o-font-family: AvenirLTStd-Black,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -ms-font-family: AvenirLTStd-Black,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+								&iexcl;&nbsp;Hola {firstname}&nbsp;!</td>
+						</tr>
+						</tbody>
+					</table>
+					<table border="0" style="width: 100%; max-width: 680px; margin: auto; background-color: white;">
+						<tbody>
+							<tr style="background-color: white;">
+								<td style="text-align: center; padding: 1em;"><a target="_blank" href="https://www.farmaciabarata.es/"><img style="width: 40px; max-width: 40px;" src="https://farmaciabarata.es/themes/farmaTheme/img/farmacia_barata_corazon_mail.png" /></a></td>
+							</tr>
+						</tbody>
+					</table>
+					<table border="0" style="width: 100%; max-width: 640px; margin:0 auto 20px auto; background-color: white;">
+						<tbody>
+							<tr style="background-color: white;">
+								<td style="padding: 0; margin: 0; font-size: 24px; text-align: center; color: #73D6D8">Tu pedido realizado en <a target="_blank" href="https://www.farmaciabarata.es/" style="color:#5BAFBD; text-decoration: none;">farmaciabarata.es</a> ha sido enviado y lo recibirás en las próximas 24/48 horas hábiles.</td>
+							</tr>
+						</tbody>
+					</table>
+					<table border="0" style="width: 80%; max-width: 640px; margin: auto; background-color: white; padding: 2em 0 1em 0;">
+						<tbody>
+							<tr>
+								<td style="margin: 0; text-align: center;vertical-align: middle;font-size: 24px;color: white;background-color: #E66E7F;padding: 0.45em 2em;letter-spacing: 0.02em;">YA HEMOS PROCESADO TU ENVÍO</td>
+							</tr>
+						</tbody>
+					</table>
+					<table border="0" style="width: 100%; max-width: 640px; margin: auto; background-color: white; padding: 3em 0 1em 0;">
+						<tbody>
+							<tr>
+								<td style="margin: 0; text-align: left;">
+									<span style="font-size: 22px;color: #73D6D8;background-color: white;padding: 0;letter-spacing: 0.02em;">Enviado a:</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table border="0" style="width: 100%; max-width: 680px; margin: auto; background-color: white;">
+						<tbody><tr style="background-color: white;"><td>
+						<table style="width: 100%; max-width: 640px; margin: auto; background-color: white; padding-bottom:20px;">
+							<tbody>
+								<tr style="background-color: white;">
+									<td style="padding: 0.25em 0;font-size: 18px; color:#4A4749;">N&uacute;mero de pedido: <span style="font-weight: bold;">{order_name}</span></td>
+								</tr>
+								<tr style="background-color: white;">
+									<td style="padding: 0.25em 0;font-size: 18px; color:#4A4749;">M&eacute;todo de pago: {payment}</td>
+								</tr>
+								<tr style="background-color: white;">
+									<td style="padding: 0.25em 0;font-size: 18px; color:#4A4749;">Importe: <span style="font-weight: bold;">{total_paid}</span></td>
+								</tr>
+								<tr style="background-color: white;">
+									<td style="padding: 0.25em 0;font-size: 18px; color:#4A4749;">M&eacute;todo de env&iacute;o: {carrier}</td>
+								</tr>
+								<tr style="background-color: white;">
+									<td style="padding: 0.25em 0;font-size: 18px; color:#4A4749;">Direcci&oacute;n de entrega: {delivery_address1} {delivery_address2}, {delivery_city}, {delivery_postal_code}</td>
+								</tr>
+							</tbody>
+						</table>
+						</td></tr></tbody>
+					</table>
+					<table border="0" style="width: 100%; max-width: 680px; margin: auto; background-color: white; padding: 0.5em 0;">
+						<tbody>
+							<tr>
+								<hr style="border-top: 2px solid #73D6D8;width: 100%;text-align: center;">
+							</tr>
+						</tbody>
+					</table>
+					<table border="0" style="width: 100%; tex-aling:left; max-width: 640px; margin: auto; background-color: white; padding: 3em 0;">
+						<tbody>
+							<tr>
+								<td style="text-align: center;font-size: 22px;background-color: white;padding: 0; color: #EAA73B;">&iquest;Qui&eacute;res saber d&oacute;nde est&aacute; tu pedido?
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table border="0" style="width: 100%; tex-aling:left; max-width: 640px; margin: auto; background-color: white; padding-bottom: 1em;">
+						<tbody>
+							<tr>
+								<td style="text-align: center;vertical-align: middle;">
+									<a href="https://seguimiento.farmaciabarata.es/{order_name}" style="vertical-align: middle;text-decoration:none;font-size: 22px;background-color: #EAA73B;padding: 0.4em 2em; color: white;">VER SEGUIMIENTO</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table border="0" style="width: 100%; max-width: 680px; margin: auto; background-color: white;">
+						<tbody>
+							<tr style="background-color: white;">
+								<td style="text-align: center;padding: 0;">
+									<a target="_blank" href="https://seguimiento.farmaciabarata.es/{order_name}">
+										<img style="width: 100%; max-width: 680px;border:3px solid #EAA73B;"  src="https://farmaciabarata.es/themes/farmaTheme/img/shipped_buscador.jpg" />
+									</a></td>
+							</tr>
+						</tbody>
+					</table>
+					<table border="0" style="width: 100%; max-width: 640px; margin: auto; background-color: white; padding: 1em 0;">
+						<tbody>
+							<tr>
+								<td style="margin: 0; text-align: center;">
+									<span style="font-size: 30px;color: #73D6D8;background-color: white;letter-spacing: 0.02em;">&iexcl;Gracias por tu confianza!</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table style="width: 100%; max-width: 640px; margin: auto; background-color: white;">
+						<tbody>
+							<tr>
+								<td style="padding: 1.5em 0 2em 0; margin: 0; font-size: 14px; line-height: 1.5em; text-align: left; color: #4A4749;">
+									Puedes revisar tu pedido y descargar la factura desde el <a href="{history_url}" target="_blank" style="color: #EAA73B;">"Historial de Pedidos"</a> de tu cuenta de cliente, haga click en <a href="{my_account_url}" target="_blank" style="color: #EAA73B;">"Mi Cuenta"</a> en nuestra tienda.<br/>
+									Tambi&eacute;n puedes consulta cualquier duda en nuestras <a href="https://www.farmaciabarata.es/content/condiciones-de-compra.html" style="color: #73D6D8; text-decoration: underline;">condiciones generales de venta</a>.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center; font-weight: bold;"><a href="https://www.farmaciabarata.es/" target="_blank" style="font-weight:500; font-size: 16px;letter-spacing: 0.05em;font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -moz-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -webkit-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -o-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -ms-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;padding: 0.5em 1em;text-decoration:none; background-color:#5BAFBD;color: white;">www.farmaciabarata.es</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body></html>
