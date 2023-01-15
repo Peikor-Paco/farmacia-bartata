@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,22 +46,19 @@
 						<!-- intro -->
 						<table border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
 							<tbody>
-                                <tr>
-                                    <td style="padding: 0 16px;">
-                                        <table border="0" cellpadding="0" cellspacing="0" style="width:100%;margin:auto;background-color:#FFFFFF;">
+								<tr>
+									<td style="padding: 0 16px;">
+										<table border="0" cellpadding="0" cellspacing="0" style="width:100%;margin:auto;background-color:#FFFFFF;">
 											<tbody>
 												<tr>
-													<td style="text-align:center;font-family:Montserrat,Verdana,sans-serif;font-size:20px;color:#016AA6;font-weight: bold;">&iexcl;Pedido realizado!
+													<td style="text-align:center;font-family:Montserrat,Verdana,sans-serif;font-size:20px;color:#016AA6;font-weight: bold;">&iexcl;Pedido enviado!
 													</td>
 												</tr>
 												<tr><td bgcolor="#FFFFFF" width="100%" style="line-height:16px;font-size:16px">&nbsp;</td></tr>
 												<tr>
-													<td style="font-family:Montserrat,Verdana,sans-serif;font-size:17px;text-align:center;line-height:24px;color:#4a4749"><strong>{firstname}</strong>, gracias por realizar tu compra en Farmacia Barata,<br> tu pedido <strong>{order_name}</strong> está confirmado</td>
+													<td style="font-family:Montserrat,Verdana,sans-serif;font-size:17px;text-align:center;line-height:24px;color:#4a4749"><strong>Hola {firstname}</strong>, tu pedido ha sido enviado y lo recibirás en las <strong>próximas 24/48 horas hábiles</strong>, en la dirección que nos indicaste.</td>
 												</tr>
 												<tr><td bgcolor="#FFFFFF" width="100%" style="line-height:16px;font-size:16px">&nbsp;</td></tr>
-												<tr>
-													<td style="font-family:Montserrat,Verdana,sans-serif;font-size:17px;text-align:center;line-height:24px;color:#4a4749">Recibiras un email cuando te enviemos tus productos</td>
-												</tr>
 											</tbody>
 										</table>
 									</td>
@@ -103,169 +101,14 @@
 							<tbody>
 								<tr>
 									<td style="padding:0;margin:0;font-family:Montserrat,Verdana,sans-serif;font-size:15px;line-height:24px;text-align:left;color:#4a4749">
-										Pedido: <strong>{order_name}</strong> realizado el
-										<strong>{date}h</strong>.<br />
-										M&eacute;todo de pago: <strong>{payment}</strong><br />
-										Transportista: <strong>{carrier}</strong>
+										Pedido: <strong>{order_name}</strong><br />
+										Transportista: <strong>{carrier}</strong><br />
+										Direcci&oacute;n de entrega: <strong>{delivery_address1} {delivery_address2}, <br />{delivery_city}, {delivery_postal_code}</strong></strong>
 									</td>
 								</tr>
 							</tbody>
 						</table>
-						<!-- espacio --><table border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;"><tbody><tr><td bgcolor="#FFFFFF" width="100%" style="line-height:24px; font-size:24px">&nbsp;</td></tr></tbody></table>
-						<!-- resumen datos productos -->
-						<table class="table" bgcolor="#ffffff" style="border-bottom:1px solid #a7a7a7;width:100%;max-width:640px;margin:auto;border-spacing: 10px 0;border-collapse:separate;margin-top:1em; margin-bottom:1em;text-align: left;">
-							<tbody>
-								<tr>
-									<td bgcolor="#fff"
-										style="border-bottom:1px solid #a7a7a7;background-color:#fff;color:#4a4749;font-family:Montserrat,Verdana,sans-serif;font-size:13px;margin-right:10px;"
-										width="10%">Ref.
-									</td>
-									<td bgcolor="#fff"
-										style="border-bottom:1px solid #a7a7a7;background-color:#fff;color:#4a4749;font-family:Montserrat,Verdana,sans-serif;font-size:13px;margin-right:10px;"
-										width="40%">Producto
-									</td>
-									<td bgcolor="#fff"
-										style="border-bottom:1px solid #a7a7a7;background-color:#fff;color:#4a4749;font-family:Montserrat,Verdana,sans-serif;font-size:13px;margin-right:10px;"
-										width="20%">Precio unid.
-									</td>
-									<td bgcolor="#fff"
-										style="border-bottom:1px solid #a7a7a7;background-color:#fff;color:#4a4749;font-family:Montserrat,Verdana,sans-serif;font-size:13px;margin-right:10px;"
-										width="10%">Cantidad
-									</td>
-									<td bgcolor="#fff"
-										style="border-bottom:1px solid #a7a7a7;background-color:#fff;color:#4a4749;font-family:Montserrat,Verdana,sans-serif;font-size:13px;font-weight:bold;text-align:right;"
-										width="20%">Precio total
-									</td>
-								</tr>
-								<tr>
-									<td style="color:#4a4749;font-family:Montserrat,Verdana,sans-serif;font-size:13px;">{products}</td>
-								</tr>
-							</tbody>
-						</table>
-						<!-- resumen datos pedido total -->
-						<table border="0" cellpadding="0" cellspacing="0"
-							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
-							<tbody>
-								<tr>
-									<td width="50%"
-										style="text-align:left;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
-										Productos</td>
-									<td width="50%"
-										style="text-align:right;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
-										{total_products}</td>
-								</tr>
-								<tr>
-									<td colspan="2" bgcolor="#FFFFFF" width="100%" style="line-height:8px;font-size:8px">&nbsp;
-									</td>
-								</tr>
-								<tr>
-									<td width="50%"
-										style="text-align:left;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
-										Descuentos</td>
-									<td width="50%"
-										style="text-align:right;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
-										{total_discounts}</td>
-								</tr>
-								<tr>
-									<td colspan="2" bgcolor="#FFFFFF" width="100%" style="line-height:8px;font-size:8px">&nbsp;
-									</td>
-								</tr>
-								<tr>
-									<td width="50%"
-										style="text-align:left;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">Papel
-										de regalo</td>
-									<td width="50%"
-										style="text-align:right;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
-										{total_wrapping}</td>
-								</tr>
-								<tr>
-									<td colspan="2" bgcolor="#FFFFFF" width="100%" style="line-height:8px;font-size:8px">&nbsp;
-									</td>
-								</tr>
-								<tr>
-									<td width="50%"
-										style="text-align:left;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
-										Transporte</td>
-									<td width="50%"
-										style="text-align:right;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
-										{total_shipping}</td>
-								</tr>
-								<tr>
-									<td colspan="2" bgcolor="#FFFFFF" width="100%" style="line-height:8px;font-size:8px">&nbsp;
-									</td>
-								</tr>
-								<tr>
-									<td width="50%"
-										style="text-align:left;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
-										Impuesto total</td>
-									<td width="50%"
-										style="text-align:right;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
-										{total_tax_paid}</td>
-								</tr>
-								<tr>
-									<td colspan="2" bgcolor="#FFFFFF" width="100%" style="border-bottom:1px solid #a7a7a7;line-height:12px;font-size:12px">&nbsp;
-									</td>
-								</tr>
-								<tr>
-									<td colspan="2" bgcolor="#FFFFFF" width="100%" style="line-height:12px;font-size:12px">&nbsp;
-									</td>
-								</tr>
-								<tr>
-									<td width="50%"
-										style="text-align:left;font-size:15px;color:#4a4749;font-weight:bold;font-family:Montserrat,Verdana,sans-serif;">
-										Pago total</td>
-									<td width="50%"
-										style="text-align:right;font-size:15px;color:#4a4749;font-weight:bold;font-family:Montserrat,Verdana,sans-serif;">
-										{total_paid}</td>
-								</tr>
-							</tbody>
-						</table>
-						<!-- Dirección de entrga y faturación -->
-						<table border="0" style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
-							<tbody>
-								<tr>
-									<td style="width: 50%;">
-										<table
-											style="border-collapse: collapse; float: left; margin-top: 1em; margin-bottom: 1em; min-width: 300px;">
-											<tbody>
-												<tr>
-													<td style="margin: 1em 1em 1em 0;">
-														<p
-															style="color:#4a4749;font-weight: normal;border-bottom:2px solid #4a4749;padding: 0 0 0.5em 0;font-size:15px;font-family:Montserrat,Verdana,sans-serif;">
-															Direcci&oacute;n - <strong>ENTREGA</strong>
-														</p>
-														<p style="margin: 1em 0; padding: 0;">
-															<span
-																style="color:#4a4749;font-weight: normal;font-size:14px;font-family:Montserrat,Verdana,sans-serif;">{delivery_block_html}</span>
-														</p>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</td>
-									<td style="width: 50%;">
-										<table
-											style="border-collapse: collapse; float: right; margin-top: 1em; margin-bottom: 1em; min-width: 300px;">
-											<tbody>
-												<tr>
-													<td style="margin: 1em 0 1em 0;">
-														<p
-															style="color:#4a4749;font-weight: normal;border-bottom:2px solid #4a4749;padding: 0 0 0.5em 0;font-size:15px;font-family:Montserrat,Verdana,sans-serif;">
-															Direcci&oacute;n -
-															<strong>FACTURACI&Oacute;N</strong>
-														</p>
-														<p style="margin: 1em 0; padding: 0;">
-															<span
-																style="color:#4a4749;font-weight: normal;font-size:14px;font-family:Montserrat,Verdana,sans-serif;">{invoice_block_html}</span>
-														</p>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+						<!-- espacio 32--><table border="0"cellpadding="0"cellspacing="0" style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;"><tbody><tr><td bgcolor="#FFFFFF" width="100%" style="line-height:32px; font-size:32px">&nbsp;</td></tr></tbody></table>
 						<!-- legales -->
 						<table border="0" style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
 							<tbody>
@@ -286,7 +129,7 @@
 								</tr>
 							</tbody>
 						</table>
-						<!-- espacio --><table border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;"><tbody><tr><td bgcolor="#FFFFFF" width="100%" style="line-height:40px; font-size:40px">&nbsp;</td></tr></tbody></table>
+						<!-- espacio 40--><table border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;"><tbody><tr><td bgcolor="#FFFFFF" width="100%" style="line-height:40px; font-size:40px">&nbsp;</td></tr></tbody></table>
 						<!-- APP -->
 						<table border="0"cellpadding="0"cellspacing="0"
 							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
@@ -303,7 +146,7 @@
 								</tr>
 							</tbody>
 						</table>
-						<!-- espacio --><table border="0"cellpadding="0"cellspacing="0" style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;"><tbody><tr><td bgcolor="#FFFFFF" width="100%" style="line-height:40px; font-size:40px">&nbsp;</td></tr></tbody></table>
+						<!-- espacio 40--><table border="0"cellpadding="0"cellspacing="0" style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;"><tbody><tr><td bgcolor="#FFFFFF" width="100%" style="line-height:40px; font-size:40px">&nbsp;</td></tr></tbody></table>
 						<!-- redes sociales -->
 						<table border="0"cellpadding="0"cellspacing="0"
 							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
