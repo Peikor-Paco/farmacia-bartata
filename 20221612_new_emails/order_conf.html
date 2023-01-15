@@ -1,173 +1,594 @@
 <!DOCTYPE html>
 <html>
-	<head>
-<style>
-@font-face {
-    font-family: AvenirLTStd-Black;
-    src: url("https://farmaciabarata.es/themes/farmaTheme/font/AvenirLTStd-Black.otf") format("opentype");
-}
-@font-face {
-    font-family: AvenirLTStd-Heavy;
-    src: url("https://farmaciabarata.es/themes/farmaTheme/font/AvenirLTStd-Heavy.otf") format("opentype");
-}
-@font-face {
-    font-family: AvenirLTStd-Medium;
-    src: url("https://farmaciabarata.es/themes/farmaTheme/font/AvenirLTStd-Medium.otf") format("opentype");
-}
-</style>	
 
-	</head>
-	<body>
-<div style="margin-bottom:40px;font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -moz-font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -webkit-font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -o-font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -ms-font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
-	<table style="margin: auto; width: 100%; max-width: 740px;padding-top: 2em;">
-		<tbody>
-			<tr>
-				<td style="padding-bottom: 2em;">
-					<table border="0" style="width: 100%; max-width: 680px; margin: auto; background-color: white;">
-						<tbody>
-						<tr style="background-color: white;">
-							<td style="padding: 25px 0 10px 0; margin: 0; font-size: 24px; font-weight: bold; text-align: center; color: #EAA73B;font-family: AvenirLTStd-Black,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -moz-font-family: AvenirLTStd-Black,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -webkit-font-family: AvenirLTStd-Black,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -o-font-family: AvenirLTStd-Black,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -ms-font-family: AvenirLTStd-Black,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
-								&iexcl;Hola {firstname}!</td>
-						</tr>
-						</tbody>
-					</table>
-					<table border="0" style="width: 100%; max-width: 680px; margin: auto; background-color: white;">
-						<tbody>
-							<tr style="background-color: white;">
-								<td style="text-align: center; padding: 1em;"><a target="_blank" href="https://www.farmaciabarata.es/"><img style="width: 100%; max-width: 40px;" src="https://farmaciabarata.es/themes/farmaTheme/img/farmacia_barata_corazon_mail.png" /></a></td>
-							</tr>
-						</tbody>
-					</table>
-					<table border="0" style="width: 100%; max-width: 680px; margin:0 auto 20px auto; background-color: white;">
-						<tbody>
-							<tr style="background-color: white;">
-								<td style="padding: 0; margin: 0; font-size: 22px; text-align: center; color: #73D6D8">Gracias por realizar tu compra en Farmacia Barata</td>
-							</tr>
-						</tbody>
-					</table>
-					<table border="0" style="width: 100%; max-width: 640px; margin: auto; background-color: white; padding: 2em 0 1em 0;">
-						<tbody>
-							<tr>
-								<td style="margin: 0; text-align: center;">
-									<span style="font-size: 20px;color: white;background-color: #E66E7F;padding: 0.5em 1em;letter-spacing: 0.02em;">ESTOS SON LOS DATOS DE TU PEDIDO</span>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<table border="0" style="width: 100%; max-width: 680px; margin: 20px auto 10px auto; background-color: white;">
-						<tbody>
-							<tr style="background-color: white;">
-								<td style="padding: 0; margin: 0; font-size: 18px; text-align: center; color: #EAA73B;font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -moz-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -webkit-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -o-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -ms-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
-								¿Qui&eacute;res saber d&oacute;nde est&aacute; tu pedido?
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<table border="0" style="width: 100%; tex-aling:center; max-width: 640px; margin:0 auto 20px auto; background-color: white; padding: 2em 0 2em 0;">
-						<tbody>
-							<tr>
-								<td style="text-align: center;">
-									<a href="https://seguimiento.farmaciabarata.es/{order_name}" target="_blank" style="text-decoration:none;">
-										<span style="font-size: 18px;background-color: #EAA73B;padding: 0.4em 2em; color: white;">VER SEGUIMIENTO</span>
-									</a>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<table border="0" style="width: 100%; max-width: 680px; margin: auto; background-color: white; padding: 0;">
-						<tbody><tr><td>
-							<table border="0" style="width: 100%; max-width: 640px; margin: auto; background-color: white;">
-								<tbody><tr><td style="padding: 0; margin: 0; font-size: 18px; text-align: left; color:#4A4749">
-									Pedido: <strong>{order_name}</strong> realizado el {date}h.<br/>
-									M&eacute;todo de pago: {payment}<br/>
-									Transportista: {carrier}<br/>
-								</td></tr></tbody>
-							</table>
-							<table class="table table-recap" bgcolor="#ffffff" style="border-bottom: 2px solid #73D6D8;width: 100%; max-width: 638px; margin: auto;border-spacing: 10px 0; border-collapse: separate; margin-top: 1em; margin-bottom: 1em;text-align: left;">
-								<tbody>
-									<tr>
-										<th bgcolor="#fff" style="border-bottom: 2px solid #73D6D8; background-color: #fff; color: #5BAFBD; font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;; font-size: 14px; margin-right: 10px;font-weight: 100;" width="10%">Ref.</th>
-										<th bgcolor="#fff" style="border-bottom: 2px solid #73D6D8; background-color: #fff; color: #5BAFBD; font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;; font-size: 14px; margin-right: 10px;font-weight: 100;" width="40%">Producto</th>
-										<th bgcolor="#fff" style="border-bottom: 2px solid #73D6D8; background-color: #fff; color: #5BAFBD; font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;; font-size: 14px; margin-right: 10px;font-weight: 100;" width="20%">Precio unid.</th>
-										<th bgcolor="#fff" style="border-bottom: 2px solid #73D6D8; background-color: #fff; color: #5BAFBD; font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;; font-size: 14px; margin-right: 10px;font-weight: 100;" width="10%">Cantidad</th>
-										<th bgcolor="#fff" style="border-bottom: 2px solid #73D6D8; background-color: #fff; color: #5BAFBD; font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;; font-size: 14px;font-weight: 500;" width="20%">Precio total</th>
-									</tr>
-									<tr><td style="font-size: 14px;">{products}</td></tr>
-								</tbody>
-							</table>
-							<table bgcolor="#ffffff" style="color: #EAA73B;width: 100%; margin: auto; border-collapse: collapse; font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;; margin-top: 1em; max-width: 640px;">
-								<tbody>
-									<tr>
-										<td width="50%" style="padding: 0.7em; text-align: left; font-size: 14px;">Productos</td>
-										<td width="50%" style="padding: 0.7em; text-align: right; font-size: 14px;">{total_products}</td>
-									</tr>
-									<tr>
-										<td width="50%" style="padding: 0.7em; text-align: left; font-size: 14px;">Descuentos</td>
-										<td width="50%" style="padding: 0.7em; text-align: right; font-size: 14px;">{total_discounts}</td>
-									</tr>
-									<tr>
-										<td width="50%" style="padding: 0.7em; text-align: left; font-size: 14px;">Papel de regalo</td>
-										<td width="50%" style="padding: 0.7em; text-align: right; font-size: 14px;">{total_wrapping}</td>
-									</tr>
-									<tr>
-										<td width="50%" style="padding: 0.7em; text-align: left; font-size: 14px;">Transporte</td>
-										<td width="50%" style="padding: 0.7em; text-align: right; font-size: 14px;">{total_shipping}</td>
-									</tr>
-									<tr>
-										<td width="50%" style="padding: 0.7em; text-align: left; font-size: 14px;">Impuesto total</td>
-										<td width="50%" style="padding: 0.7em; text-align: right; font-size: 14px;">{total_tax_paid}</td>
-									</tr>
-									<tr style="border:2px solid #E66E7F;padding: 2em; font-weight: bold;font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -moz-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -webkit-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -o-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -ms-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
-										<td width="50%" style="padding: 0.8em; text-align: left; font-size: 16px; color:#4A4749;">PAGO TOTAL</td>
-										<td width="50%" style="padding: 0.8em; text-align: right; font-size: 16px; color:#4A4749;">{total_paid}</td>
-									</tr>
-								</tbody>
-							</table>
-							<table border="0" style="width: 100%; max-width: 640px; margin: auto; background-color: white;">
+<head>
+	<title>Pedido confirmado</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<style type="text/css">
+		body,
+		table,
+		td,
+		a {
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+		}
+
+		table,
+		td {
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+		img {
+			-ms-interpolation-mode: bicubic;
+		}
+
+
+		img {
+			border: 0;
+			height: auto;
+			line-height: 100%;
+			outline: none;
+			text-decoration: none;
+		}
+
+		table {
+			border-collapse: collapse !important;
+		}
+
+		body {
+			height: 100% !important;
+			margin: 0 !important;
+			padding: 0 !important;
+			width: 100% !important;
+		}
+
+
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		u+#body a {
+			color: inherit;
+			text-decoration: none;
+			font-size: inherit;
+			font-family: inherit;
+			font-weight: inherit;
+			line-height: inherit;
+		}
+
+		#MessageViewBody a {
+			color: inherit;
+			text-decoration: none;
+			font-size: inherit;
+			font-family: inherit;
+			font-weight: inherit;
+			line-height: inherit;
+		}
+
+		a {
+			color: #B200FD;
+			font-weight: 600;
+			text-decoration: underline;
+		}
+
+		a:hover {
+			color: #000000 !important;
+			text-decoration: none !important;
+		}
+
+		@media screen and (min-width:600px) {}
+	</style>
+</head>
+
+<body>
+	<div
+		style="margin-bottom:40px;font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -moz-font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -webkit-font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -o-font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -ms-font-family: AvenirLTStd-Medium,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+		<table style="margin: auto; width:100%; background-color: #FFFFFF;">
+			<tbody>
+				<tr>
+					<td>
+						<!-- espacio -->
+						<table border="0" cellpadding="0" cellspacing="0"
+							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr>
+									<td bgcolor="#FFFFFF" width="100%" style="line-height: 16px; font-size: 16px">&nbsp;
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- cabecera -->
+						<table border="0" cellpadding="0" cellspacing="0"
+							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr style="background-color: #FFFFFF;">
+									<td style="text-align:center;vertical-align:middle;">
+										<a target="_blank" href="https://www.farmaciabarata.es/?=altregis">
+											<img style="width:100%; max-width: 240px;"
+												src="https://www.farmaciabarata.es/img/cms/mailing/20230104/logo-farmacia-barata.jpg"
+												title="logotipo de farmacia barata" />
+										</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- espacio -->
+						<table border="0" cellpadding="0" cellspacing="0"
+							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr>
+									<td bgcolor="#FFFFFF" width="100%" style="line-height:16px;font-size:16px">&nbsp;
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- próximos pasos -->
+						<table border="0"cellpadding="0"cellspacing="0"
+							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr>
+									<td>
+										<img style="width:100%;"
+											src="https://www.farmaciabarata.es/img/cms/mailing/20230104/nuestras-marcas-tilte.jpg"
+											title="Pedido realizado" />
+									</td>  
+								</tr>
+							</tbody>
+						</table>
+						<!-- espacio -->
+						<table border="0" cellpadding="0" cellspacing="0"
+							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr>
+									<td bgcolor="#FFFFFF" width="100%" style="line-height:16px;font-size:16px">&nbsp;
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- intro -->
+						<table border="0" cellpadding="0" cellspacing="0"
+							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr>
+									<td
+										style="text-align:center;font-family:Montserrat,Verdana,sans-serif;font-size:20px;color:#016AA6;font-weight: bold;">
+										&iexcl;Pedido realizado!
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#FFFFFF" width="100%" style="line-height:8px;font-size:8px">&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td
+										style="font-family:Montserrat,Verdana,sans-serif;font-size:17px;text-align:center;line-height:24px;color:#4a4749">
+										<strong>{firstname}</strong>, gracias por realizar tu compra en Farmacia Barata,<br> tu pedido <strong>{order_name}</strong> está confirmado!</td>
+								</tr>
+								<tr>
+									<td bgcolor="#FFFFFF" width="100%" style="line-height:16px;font-size:16px">&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td
+										style="font-family:Montserrat,Verdana,sans-serif;font-size:17px;text-align:center;line-height:24px;color:#4a4749">Recibiras un email cuando te enviemos tus productos
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- espacio -->
+						<table border="0" cellpadding="0" cellspacing="0"
+						style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr>
+									<td bgcolor="#FFFFFF" width="100%" style="line-height:16px;font-size:16px">&nbsp;
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- seguimiento -->
+						<table border="0" cellpadding="0" cellspacing="0"
+						    style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr style="background-color: white;">
+									<td
+										style="font-size:15px; text-align:center; color:#016AA6;font-weight:normal;font-family:Montserrat,Verdana,sans-serif;">
+										¿Qui&eacute;res saber d&oacute;nde est&aacute; tu pedido?
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#FFFFFF" width="100%" style="line-height:16px;font-size:16px">&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td style="text-align: center;">
+										<a href="https://seguimiento.farmaciabarata.es/{order_name}" target="_blank"
+											style="font-family:Montserrat,Verdana,sans-serif;font-size:14px;background-color:#016AA6;font-weight:normal;padding:0.4em 2em;color:#FFFFFF;text-decoration:none;">
+											<span
+												style="font-family:Montserrat,Verdana,sans-serif;font-size:14px;background-color:#016AA6;font-weight:normal;padding:0.4em 2em;color:#FFFFFF">Hacer seguimiento</span>
+										</a>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#FFFFFF" width="100%" style="line-height:16px;font-size:16px">&nbsp;
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- espacio -->
+						<table border="0" cellpadding="0" cellspacing="0"
+							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr>
+									<td bgcolor="#FFFFFF" width="100%" style="line-height:32px; font-size:32px">&nbsp;
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- resumen datos pedido -->
+						<table border="0" cellpadding="0" cellspacing="0"
+							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr>
+									<td style="padding:0;margin:0;font-family:Montserrat,Verdana,sans-serif;font-size:15px;line-height:24px;text-align:left;color:#4a4749">
+										Pedido: <strong>{order_name}</strong> realizado el
+										<strong>{date}h</strong>.<br />
+										M&eacute;todo de pago: <strong>{payment}</strong><br />
+										Transportista: <strong>{carrier}</strong>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- espacio -->
+						<table border="0" cellpadding="0" cellspacing="0"
+						style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr>
+									<td bgcolor="#FFFFFF" width="100%" style="line-height:24px; font-size:24px">&nbsp;
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- resumen datos productos -->
+						<table class="table" bgcolor="#ffffff"
+						style="border-bottom:1px solid #a7a7a7;width:100%;max-width:640px;margin:auto;border-spacing: 10px 0;border-collapse:separate;margin-top:1em; margin-bottom:1em;text-align: left;">
+							<tbody>
+								<tr>
+									<td bgcolor="#fff"
+										style="border-bottom:1px solid #a7a7a7;background-color:#fff;color:#4a4749;font-family:Montserrat,Verdana,sans-serif;font-size:13px;margin-right:10px;"
+										width="10%">Ref.
+									</td>
+									<td bgcolor="#fff"
+										style="border-bottom:1px solid #a7a7a7;background-color:#fff;color:#4a4749;font-family:Montserrat,Verdana,sans-serif;font-size:13px;margin-right:10px;"
+										width="40%">Producto
+									</td>
+									<td bgcolor="#fff"
+										style="border-bottom:1px solid #a7a7a7;background-color:#fff;color:#4a4749;font-family:Montserrat,Verdana,sans-serif;font-size:13px;margin-right:10px;"
+										width="20%">Precio unid.
+									</td>
+									<td bgcolor="#fff"
+										style="border-bottom:1px solid #a7a7a7;background-color:#fff;color:#4a4749;font-family:Montserrat,Verdana,sans-serif;font-size:13px;margin-right:10px;"
+										width="10%">Cantidad
+									</td>
+									<td bgcolor="#fff"
+										style="border-bottom:1px solid #a7a7a7;background-color:#fff;color:#4a4749;font-family:Montserrat,Verdana,sans-serif;font-size:13px;font-weight:bold;text-align:right;"
+										width="20%">Precio total
+									</td>
+								</tr>
+								<tr>
+									<td style="color:#4a4749;font-family:Montserrat,Verdana,sans-serif;font-size:13px;">{products}</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- resumen datos pedido total -->
+						<table border="0" cellpadding="0" cellspacing="0"
+							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr>
+									<td width="50%"
+										style="text-align:left;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
+										Productos</td>
+									<td width="50%"
+										style="text-align:right;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
+										{total_products}</td>
+								</tr>
+								<tr>
+									<td colspan="2" bgcolor="#FFFFFF" width="100%" style="line-height:8px;font-size:8px">&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td width="50%"
+										style="text-align:left;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
+										Descuentos</td>
+									<td width="50%"
+										style="text-align:right;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
+										{total_discounts}</td>
+								</tr>
+								<tr>
+									<td colspan="2" bgcolor="#FFFFFF" width="100%" style="line-height:8px;font-size:8px">&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td width="50%"
+										style="text-align:left;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">Papel
+										de regalo</td>
+									<td width="50%"
+										style="text-align:right;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
+										{total_wrapping}</td>
+								</tr>
+								<tr>
+									<td colspan="2" bgcolor="#FFFFFF" width="100%" style="line-height:8px;font-size:8px">&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td width="50%"
+										style="text-align:left;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
+										Transporte</td>
+									<td width="50%"
+										style="text-align:right;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
+										{total_shipping}</td>
+								</tr>
+								<tr>
+									<td colspan="2" bgcolor="#FFFFFF" width="100%" style="line-height:8px;font-size:8px">&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td width="50%"
+										style="text-align:left;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
+										Impuesto total</td>
+									<td width="50%"
+										style="text-align:right;font-size:13px;font-family:Montserrat,Verdana,sans-serif;">
+										{total_tax_paid}</td>
+								</tr>
+								<tr>
+									<td colspan="2" bgcolor="#FFFFFF" width="100%" style="border-bottom:1px solid #a7a7a7;line-height:12px;font-size:12px">&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" bgcolor="#FFFFFF" width="100%" style="line-height:12px;font-size:12px">&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td width="50%"
+										style="text-align:left;font-size:15px;color:#4a4749;font-weight:bold;font-family:Montserrat,Verdana,sans-serif;">
+										Pago total</td>
+									<td width="50%"
+										style="text-align:right;font-size:15px;color:#4a4749;font-weight:bold;font-family:Montserrat,Verdana,sans-serif;">
+										{total_paid}</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- Dirección de entrga y faturación -->
+						<table border="0"
+						style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
 							<tbody>
 								<tr>
 									<td style="width: 50%;">
-										<table style="border-collapse: collapse; float: left; margin-top: 1em; margin-bottom: 1em; min-width: 300px;">
-											<tbody><tr><td style="margin: 1em 1em 1em 0;">
-												<p style="color: #73D6D8; font-weight: normal; border-bottom: 2px solid #5BAFBD;padding: 0 0 0.5em 0; font-size: 16px;">Direcci&oacute;n - <strong>ENTREGA</strong></p>
-												<p style="margin: 1em 0; padding: 0;"><span style="color: #5BAFBD; font-weight: normal; font-size: 14px;">{delivery_block_html}</span></p>
-											</td></tr></tbody>
+										<table
+											style="border-collapse: collapse; float: left; margin-top: 1em; margin-bottom: 1em; min-width: 300px;">
+											<tbody>
+												<tr>
+													<td style="margin: 1em 1em 1em 0;">
+														<p
+															style="color:#4a4749;font-weight: normal;border-bottom:2px solid #4a4749;padding: 0 0 0.5em 0;font-size:15px;font-family:Montserrat,Verdana,sans-serif;">
+															Direcci&oacute;n - <strong>ENTREGA</strong>
+														</p>
+														<p style="margin: 1em 0; padding: 0;">
+															<span
+																style="color:#4a4749;font-weight: normal;font-size:14px;font-family:Montserrat,Verdana,sans-serif;">{delivery_block_html}</span>
+														</p>
+													</td>
+												</tr>
+											</tbody>
 										</table>
 									</td>
 									<td style="width: 50%;">
-										<table style="border-collapse: collapse; float: right; margin-top: 1em; margin-bottom: 1em; min-width: 300px;">
-											<tbody><tr><td style="margin: 1em 0 1em 0;">
-												<p style="color: #73D6D8; font-weight: normal; border-bottom: 2px solid #5BAFBD;padding: 0 0 0.5em 0; font-size: 16px;">Direcci&oacute;n - <strong>FACTURACI&Oacute;N</strong></p>
-												<p style="margin: 1em 0; padding: 0;"><span style="color: #5BAFBD; font-weight: normal; font-size: 14px;">{invoice_block_html}</span></p>
-											</td></tr></tbody>
+										<table
+											style="border-collapse: collapse; float: right; margin-top: 1em; margin-bottom: 1em; min-width: 300px;">
+											<tbody>
+												<tr>
+													<td style="margin: 1em 0 1em 0;">
+														<p
+															style="color:#4a4749;font-weight: normal;border-bottom:2px solid #4a4749;padding: 0 0 0.5em 0;font-size:15px;font-family:Montserrat,Verdana,sans-serif;">
+															Direcci&oacute;n -
+															<strong>FACTURACI&Oacute;N</strong>
+														</p>
+														<p style="margin: 1em 0; padding: 0;">
+															<span
+																style="color:#4a4749;font-weight: normal;font-size:14px;font-family:Montserrat,Verdana,sans-serif;">{invoice_block_html}</span>
+														</p>
+													</td>
+												</tr>
+											</tbody>
 										</table>
 									</td>
 								</tr>
 							</tbody>
-							</table>
-							<table border="0" style="width: 100%; max-width: 640px; margin: auto; background-color: white;">
-							<tbody><tr style="background-color: white;">
+						</table>
+						<!-- legales -->
+						<table border="0"
+						style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr>
+									<td
+										style="color:#4a4749;font-weight: normal;font-size:14px;line-height:22px;font-family:Montserrat,Verdana,sans-serif;">
+										Puedes revisar tu pedido y descargar la factura
+										desde el <a href="{history_url}" target="_blank"
+											style="color:#016AA6;font-weight:normal;">"Historial de
+											Pedidos"</a> de tu cuenta de cliente, haga
+										click en <a href="{my_account_url}"
+											target="_blank" style="color:#016AA6;font-weight:normal;">"Mi
+											Cuenta"</a> en nuestra tienda.<br />
+										Tambi&eacute;n puedes consulta cualquier duda en
+										nuestras <a
+											href="https://www.farmaciabarata.es/content/condiciones-de-compra.html"
+											style="color:#016AA6;font-weight:normal;">condiciones
+											generales de venta</a>.
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- espacio -->
+						<table border="0" cellpadding="0" cellspacing="0"
+						style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr>
+									<td bgcolor="#FFFFFF" width="100%" style="line-height:40px; font-size:40px">&nbsp;
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- APP -->
+						<table border="0"cellpadding="0"cellspacing="0"
+							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr>
+									<td>
+										<a target="_blank"
+											href="https://app.app4less.es/app/farmaciabarata?campaign=altregis">
+											<img style="width:100%;"
+												src="https://www.farmaciabarata.es/img/cms/mailing/20230104/descarga-app.jpg"
+												title="¿Conoces todo lo que puedes hacercon tu móvil?" />
+										</a>
+									</td>  
+								</tr>
+							</tbody>
+						</table>
+						<!-- espacio -->
+						<table border="0"cellpadding="0"cellspacing="0"
+							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr>
+									<td bgcolor="#FFFFFF" width="100%" style="line-height:40px; font-size:40px">&nbsp;
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- redes sociales -->
+						<table border="0"cellpadding="0"cellspacing="0"
+							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tr>
 								<td>
-									<table style="width: 100%; max-width: 640px; margin: auto; background-color: white;">
-									<tbody>
-										<tr>
-											<td style="padding: 1.5em 0 2em 0; margin: 0; font-size: 14px; line-height: 1.35em; text-align: left; color: #4A4749;">
-												Puedes revisar tu pedido y descargar la factura desde el <a href="{history_url}" target="_blank" style="color: #EAA73B;">"Historial de Pedidos"</a> de tu cuenta de cliente, haga click en <a href="{my_account_url}" target="_blank" style="color: #EAA73B;">"Mi Cuenta"</a> en nuestra tienda.<br/>
-												Tambi&eacute;n puedes consulta cualquier duda en nuestras <a href="https://www.farmaciabarata.es/content/condiciones-de-compra.html" style="color: #73D6D8; text-decoration: underline;">condiciones generales de venta</a>.
-											</td>
-										</tr>
-									</tbody>
+									<table border="0"cellpadding="0"cellspacing="0" width="100%"
+										mstyle="font-family:Montserrat,Verdana,sans-serif;font-size:13px;line-height:16px;text-emphasis:none">
+										<tbody>
+											<tr>
+												<td bgcolor="#FFFFFF" width="90%"
+													style="font-family:Montserrat,Verdana,sans-serif;text-align:center;vertical-align:middle;background-color:#FFFFFF;color:#016AA6;font-size:16px;line-height:20px;font-weight:600;">
+													¡Síguenos en nuestras <span style="color:#e66e7f;">redes</span> para
+													no perderte nada!
+												</td>
+											</tr>
+											<tr>
+												<td bgcolor="#FFFFFF" width="90%"
+													style="line-height: 16px; font-size: 1px">&nbsp;</td>
+											</tr>
+											<tr>
+												<td bgcolor="#FFFFFF" width="90%" style="text-align:center;">
+													<a href="https://www.instagram.com/farmaciabarata/" target="_blank"
+														rel="noopener"><img
+															src="https://www.farmaciabarata.es/img/cms/mailing/20230104/instagram.jpg"
+															alt="instagram" width="36" height="36"></a>
+													&nbsp; &nbsp;
+													<a href="https://www.facebook.com/farmaciabarata/" target="_blank"
+														rel="noopener"><img
+															src="https://www.farmaciabarata.es/img/cms/mailing/20230104/facebook.jpg"
+															alt="facebook" width="36" height="36"></a>
+													&nbsp; &nbsp;
+													<a href="https://www.tiktok.com/@farmacia.barata" target="_blank"
+														rel="noopener"><img
+															src="https://www.farmaciabarata.es/img/cms/mailing/20230104/tiktok.jpg"
+															alt="tiktok" width="36" height="36"></a>
+													&nbsp; &nbsp;
+													<a href="https://es.linkedin.com/company/farmaciabarata"
+														target="_blank" rel="noopener"><img
+															src="https://www.farmaciabarata.es/img/cms/mailing/20230104/linkedin.jpg"
+															alt="linkedin" width="36" height="36"></a>
+												</td>
+											</tr>
+										</tbody>
 									</table>
 								</td>
-							</tr></tbody></table>
-						</td></tr></tbody></table>
-</td>
-</tr>
-<tr>
-<td style="text-align: center; font-weight: bold;"><a href="https://www.farmaciabarata.es/" target="_blank" style="font-weight:500; font-size: 16px;letter-spacing: 0.05em;font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -moz-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -webkit-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -o-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif; -ms-font-family: AvenirLTStd-Heavy,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;padding: 0.5em 1em;text-decoration:none; background-color:#5BAFBD;color: white;">www.farmaciabarata.es</a></td>
-</tr>
-</tbody>
-</table>
-</div>
+							</tr>
+						</table>
+						<!-- espacio -->
+						<table border="0"cellpadding="0"cellspacing="0"
+							style="width:100%;max-width:640px;margin:auto;background-color:#FFFFFF;">
+							<tbody>
+								<tr>
+									<td bgcolor="#FFFFFF" width="100%" style="line-height:40px; font-size:40px">&nbsp;
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- footer -->
+						<table border="0"cellpadding="0"cellspacing="0"
+							style="width:100%;max-width:640px; margin: auto; background-color: #F5F5F5;">
+							<tr>
+								<td style="padding:16px">
+									<table border="0"cellpadding="0" cellspacing="0" width="100%"
+										style="color:#4a4749;">
+										<tbody>
+											<tr>
+												<td bgcolor="#F5F5F5" width="90%"
+													style="font-family:Montserrat,Verdana,sans-serif;text-align:left;vertical-align:middle;color:#4a4749;font-size:14px;line-height:20px;font-weight:bold;">
+													¿Tienes alguna consulta?
+												</td>
+											</tr>
+											<tr>
+												<td bgcolor="#F5F5F5" width="90%"
+													style="line-height:8px; font-size:8px">&nbsp;</td>
+											</tr>
+
+											<tr>
+												<td bgcolor="#F5F5F5" width="90%"
+													style="font-family:Montserrat,Verdana,sans-serif;text-align:left;vertical-align:middle;color:#4a4749;font-size:13px;line-height:20px;">
+													<a style="color:#016AA6;text-decoration:underline;"
+														title="Telefono farmacia barata" href="tel:+34957944601"
+														target="_blank">957 944 601</a>
+													- <a style="color:#016AA6;text-decoration:underline;"
+														title="WhatsApp farmacia barata"
+														href="https://wa.me/34626405143/?text=Hola,%20estoy%20comprando%20en%20Farmacia%20Barata%20tengo%20una%20pregunta"
+														target="_blank">WhatsApp</a>
+													- <a style="color:#016AA6;text-decoration:underline;"
+														title="email para farmacia barata"
+														href="mailto:info@farmaciabarata.es"
+														target="_blank">info@farmaciabarata.es</a>
+													- Horario L-V: 9:00-14:00 h / 16:00-20:00h
+												</td>
+											</tr>
+											<tr>
+												<td bgcolor="#F5F5F5" width="90%"
+													style="line-height:32px;font-size:32px">&nbsp;</td>
+											</tr>
+											<tr>
+												<td bgcolor="#F5F5F5" width="90%"
+													style="font-family:Montserrat,Verdana,sans-serif;text-align:center;vertical-align:middle;background-color:#F5F5F5;color:#4a4749;font-size:12px;line-height:12px;">
+													Copyright © 2010-20230104 Farmacia Barata S.L. Todos los derechos
+													reservados.
+												</td>
+											</tr>
+											<tr>
+												<td bgcolor="#F5F5F5" width="90%"
+													style="line-height:24px; font-size:24px">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </body>
+
 </html>
