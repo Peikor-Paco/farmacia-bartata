@@ -44,7 +44,11 @@ Updated: 2022-12-20 13:08:09
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0px 4px 8px 1px rgb(16 16 16 / 6%);
+}
 
+header.entry-header:not(.related-entry-header) .entry-title {
+    text-transform: inherit;
+    margin-top: 16px;
 }
 
 .ppma-page-content.grid .ppma-article {
@@ -97,7 +101,7 @@ Updated: 2022-12-20 13:08:09
     margin-bottom: 0;
 }
 
-.entry-content p:not(.read-more) {
+body:not(.single-post) .entry-content p:not(.read-more) {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -670,7 +674,7 @@ footer .block_content {
     }
 
     .ast-header-breadcrumb {
-        padding-top: 32px;
+        padding-top: 16px;
     }
 
     .ast-right-sidebar #secondary {
