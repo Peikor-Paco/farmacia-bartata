@@ -1,0 +1,130 @@
+.parte-superior-fat .header-customapp-nombre img {
+    height: 34px;
+}
+
+
+/*--BUSCADOR--*/
+
+.close-search {
+    display: block !important;
+}
+
+.close-search svg {
+    display: none !important;
+}
+
+.close-search:after {
+    content: url('/uploads/6389/files/lupa-01.svg');
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin-right: 32px;
+}
+
+#form-search-top {
+    display: block !important;
+}
+
+#form-search-top.form-search-top {
+    height: 40px;
+
+}
+
+/*pantalla notch*/
+#reskyt-header-customapp.parte-superior-fat {
+    padding-top: 6px;
+}
+
+.fix-safe-area:not(.fix-safe-area-landscape) #reskyt-header-customapp,
+.fix-safe-area:not(.fix-safe-area-landscape) .fullscreen-top .form-search-top,
+.fix-safe-area:not(.fix-safe-area-landscape) .close-search {
+    padding-top: 20px;
+}
+
+/*----pantalla notch----*/
+.close-search {
+    top: 20% !important;
+    transform: none !important;
+    padding-top: 0px !important;
+}
+
+input#search-topapp {
+    top: 38% !important;
+    height: 32px !important;
+    Font-weight: 400 !important;
+    font-size: 12px !important;
+    background-color: #f4f4f4 !important;
+    border-radius: 25px !important;
+    padding: 0px 6px 0px 18px !important;
+}
+
+/*--BUSCADOR--*/
+
+
+/*barra superior*/
+#reskyt-header-customapp.parte-superior-fat {
+    box-shadow: 0px 2px 4px 0px #e0e0e0;
+}
+
+/*boton atras*/
+.sf-button.button-back.menuFa {
+    display: block;
+}
+
+.fa.fa-angle-left.menus-fa-2x {
+    font-size: 24px !important;
+}
+
+/*menu cabecera*/
+#off-canvas {
+    max-width: 100% !important;
+}
+
+/*slider*/
+.slick-dots {
+    margin-bottom: 2rem !important;
+}
+
+/*título subcategorias*/
+h1.title-carta {
+    color: #006BA6;
+    font-size: 30px;
+    font-weight: 300;
+    margin: -18px 0px;
+    text-transform: uppercase;
+}
+
+
+/*submenu Consultas*/
+.menu-id83835 {
+    font-weight: bold;
+    background: whitesmoke;
+    margin: 0px 0px !important;
+    padding: 0px 10px !important;
+}
+
+/*carrousel*/
+#anchor-47332 {
+    margin-bottom: 3rem;
+}
+
+#anchor-47332 .page-header {
+    margin: 2rem 0rem 3rem 0rem;
+}
+
+#anchor-47332 .page-header h2 {
+    color: #006BA6;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.scroll-horizontal .col-phone-horizontal .card-home {
+    width: 85px;
+    padding: 0px;
+    margin: 0px 18px 10px 18px;
+}
+
+#Capa_1 {
+    width: 22px;
+    height: 30px;
+}
