@@ -1,0 +1,165 @@
+/* CORE FRAMEWORKS */
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+section {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0 auto;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.flex-item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+section .container {
+  padding: 5em;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 20px;
+}
+
+.top-container {
+  margin: auto;
+  /* margin-top: 32vh; */
+}
+
+#sec-one {
+  background-color: #fff;
+  background-size: 100% auto; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center; /* optional, center the image */
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+#sec-one .header {
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+#sec-one img {
+  max-width: 60%;
+  margin: auto;
+}
+
+#sec-one .logo {
+  max-width: 150px;
+  width: 100%;
+}
+
+#sec-one img.cabecera {
+  margin-bottom: 30px;
+}
+
+#sec-one .texto {
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #3388c1;
+  padding: 0px 10px;
+}
+
+#sec-one .carrier {
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  font-weight: bold;
+  color: #2572b4;
+  font-size: 12px;
+}
+
+#sec-one .header.mobile{
+  flex-direction: column;
+  text-align: center;
+}
+
+#sec-one .micuenta{
+  margin-top: 20px;
+  display: block;
+  font-weight: bold;
+  color: #2572b4;
+}
+
+#sec-one .header.desktop {
+  display: flex;
+}
+
+#sec-one .header.mobile {
+  display: none;
+}
+
+.banner{
+  margin-top: 20px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  section .container {
+    padding: 0;
+  }
+  #sec-one img {
+    max-width: 100%;
+  }
+  #sec-one .header {
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+  #sec-one .header.desktop {
+    display: none;
+  }
+
+  #sec-one .header.mobile {
+    display: flex;
+  }
+
+  #sec-one .carrier {
+    width: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+  section .container {
+    padding: 0;
+  }
+  #sec-one img {
+    max-width: 100%;
+  }
+  #sec-one .header.desktop {
+    display: none;
+  }
+
+  #sec-one .header.mobile {
+    display: flex;
+  }
+
+  #sec-one .carrier {
+    width: auto;
+    text-align: center;
+  }
+}
