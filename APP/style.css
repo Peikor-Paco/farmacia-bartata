@@ -84,11 +84,10 @@ input#search-topapp {
 
 /*título subcategorias*/
 h1.title-carta {
-  color: #006ba6;
-  font-size: 30px;
-  font-weight: 300;
   margin: -18px 0px;
-  text-transform: uppercase;
+  color: #006ba6;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 /*submenu Consultas*/
@@ -134,4 +133,8 @@ h1.title-carta {
 #Capa_1 {
   width: 22px;
   height: 30px;
+}
+
+h2.list-title {
+  font-weight: 500;
 }
