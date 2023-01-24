@@ -138,3 +138,7 @@ h1.title-carta {
 h2.list-title {
   font-weight: 500;
 }
+
+.card-home .grid figure {
+  margin-bottom: 24px;
+}
