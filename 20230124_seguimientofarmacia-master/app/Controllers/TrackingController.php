@@ -180,17 +180,18 @@ class TrackingController extends BaseController
 		if ($result['state'] == ENVIO_CREADO) {
 			$data = [
 				'state' => 'Creado',
+				'orderstate' => 'Pedido Creado',
 				'imgcabecera' => 'Seguimiento_1120x119px_FB01.jpg',
 				'imgcuerpo' => '',
 				'text' => '¡Ya hemos notificado tu envío a la agencia de transporte por lo que muy pronto pasarán por nuestras instalaciones para recoger tu pedido!</br><br/>
-				En 24-48 horas hábiles deberías tenerlo contigo, si no es así por favor ponte en contacto con nosotros.<br/><br/>
-				Gracias por tu confianza.'
+				En 24-48 horas hábiles deberías tenerlo contigo, si no es así por favor ponte en contacto con nosotros.'
 			];
 		}
 
 		if ($result['state'] == ENVIO_RECIBIDO) {
 			$data = [
 				'state' => 'Recibido',
+				'orderstate' => 'Pedido Recibido',
 				'imgcabecera' => 'Seguimiento_1120x119px_FB02.jpg',
 				'imgcuerpo' => '',
 				'text' => '¡La agencia de transporte ha recogido ya tu paquete de nuestras instalaciones!<br/><br/>
@@ -201,6 +202,7 @@ class TrackingController extends BaseController
 		if ($result['state'] == ENVIO_TRANSITO) {
 			$data = [
 				'state' => 'Transito',
+				'orderstate' => 'Pedido en Transito',
 				'imgcabecera' => 'Seguimiento_1120x119px_FB03.jpg',
 				'imgcuerpo' => '',
 				'text' => 'Tu pedido ya está llegando a tu ciudad por lo que en 24-48 horas te será entregado, si no fuera así, por favor llámanos para solucionarlo!'
@@ -210,16 +212,17 @@ class TrackingController extends BaseController
 		if ($result['state'] == ENVIO_REPARTO) {
 			$data = [
 				'state' => 'Reparto',
+				'orderstate' => 'Pedido en Reaprto',
 				'imgcabecera' => 'Seguimiento_1120x119px_FB04.jpg',
 				'imgcuerpo' => '',
-				'text' => 'Durante el día de hoy te debería ser entregado tu pedido.<br/><br/>
-				Gracias por tu confianza!'
+				'text' => 'Durante el día de hoy te debería ser entregado tu pedido.'
 			];
 		}
 
 		if ($result['state'] == ENVIO_ENTREGADO) {
 			$data = [
 				'state' => 'Entregado',
+				'orderstate' => 'Pedido Entregado',
 				'imgcabecera' => 'entregado.jpg',
 				'imgcuerpo' => '',
 				'text' => 'Muchas gracias por confiar en nosotros, esperamos verte de nuevo muy pronto!'
@@ -229,6 +232,7 @@ class TrackingController extends BaseController
 		if ($result['state'] == ENVIO_INCIDENCIA) {
 			$data = [
 				'state' => 'Incidencia',
+				'orderstate' => 'Pedido con Incidencia',
 				'imgcabecera' => 'Seguimiento_1120x119px_FB01.jpg',
 				'imgcuerpo' => '',
 				'text' => 'Algo ha sucedido 😟 <br/><br/>

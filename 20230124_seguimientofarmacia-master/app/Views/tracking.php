@@ -40,28 +40,40 @@
         </div>
       </div>
       <div class="content">
-         <p class="carrier">
-            Pedido <?php echo $reference; ?> --- Transportista <?php echo $carrier; ?>: <?php echo $shipping_number; ?>
-          </p>
+        <div>
+          <img class="cabecera" src="<?php echo base_url(); ?>/assets/img/tracking/<?php echo $imgcabecera; ?>" />
+        </div>
+        <div class="text-center">
+            <h2 class="title"><?php echo $orderstate; ?></h2>
+        </div>
+            <p class="subtitle"><?php echo $text; ?>
+            </p>
+            <?php if (isset($state_text) && $state_text) : ?>
+              <p class="subtitle">El transportista nos indica el siguiente estado: <strong><?php echo $state_text; ?></strong></p>
+            <?php endif; ?>
+        </div>
+
+        <div class="detalle">
+                <p class="detalle__title"><strong>Detalle de pedido</strong></p>
+                <p class="detalle__body">Número: <strong><?php echo $reference; ?></strong><br />
+                Agencia de transporte: <strong><?php echo $carrier; ?></strong><br />
+                Número de seguimiento:<strong> <?php echo $shipping_number; ?></strong>
+            </p>
+        </div>
+        <p class="texto">
+          💙 Gracias por tu confianza 💙
+        </p>
+        <div class="row text-center">  
+          <?php if(isset($bannerpath) && $bannerpath): ?>
+            <a target="_blank" href="https://app.app4less.es/app/farmaciabarata?campaign=tracking">
+              <img class="banner" src="<?= $bannerpath; ?>"/>
+            </a>
+          <?php endif;?>
+        </div>
       </div>
-      <img class="cabecera" src="<?php echo base_url(); ?>/assets/img/tracking/<?php echo $imgcabecera; ?>" />
-      <img class="cuerpo" src="<?php echo base_url(); ?>/assets/img/tracking/<?php echo $imgcuerpo; ?>" />
-
-      <?php if(isset($bannerpath) && $bannerpath): ?>
-            <div class="row">
-                <img class="banner" src="<?= $bannerpath; ?>"/>
-            </div>
-        <?php endif;?>
-
-      <p class="texto"><?php echo $text; ?></p>
-      <?php if (isset($state_text) && $state_text) : ?>
-        <p class="texto">El transportista nos indica el siguiente estado: <?php echo $state_text; ?></p>
-      <?php endif; ?>
     </div>
   </section>
-
   <footer>
-
   </footer>
 </body>
 
