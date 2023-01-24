@@ -180,8 +180,8 @@ class TrackingController extends BaseController
 		if ($result['state'] == ENVIO_CREADO) {
 			$data = [
 				'state' => 'Creado',
-				'imgcabecera' => 'Seguimiento_1120x119px_FB01.png',
-				'imgcuerpo' => '1trackingFB_notificado-agencia.jpg',
+				'imgcabecera' => 'Seguimiento_1120x119px_FB01.jpg',
+				'imgcuerpo' => '',
 				'text' => '¡Ya hemos notificado tu envío a la agencia de transporte por lo que muy pronto pasarán por nuestras instalaciones para recoger tu pedido!</br><br/>
 				En 24-48 horas hábiles deberías tenerlo contigo, si no es así por favor ponte en contacto con nosotros.<br/><br/>
 				Gracias por tu confianza.'
@@ -191,8 +191,8 @@ class TrackingController extends BaseController
 		if ($result['state'] == ENVIO_RECIBIDO) {
 			$data = [
 				'state' => 'Recibido',
-				'imgcabecera' => 'Seguimiento_1120x119px_FB02.png',
-				'imgcuerpo' => '2trackingFB_pendiente-deenvio.jpg',
+				'imgcabecera' => 'Seguimiento_1120x119px_FB02.jpg',
+				'imgcuerpo' => '',
 				'text' => '¡La agencia de transporte ha recogido ya tu paquete de nuestras instalaciones!<br/><br/>
 				Muy pronto lo tendrás en tu casa, si por alguna razón no te hubiera llegado y la agencia de transporte no se hubiera puesto en contacto contigo en 24-48 horas, por favor háznoslo saber para solucionarlo.'
 			];
@@ -201,8 +201,8 @@ class TrackingController extends BaseController
 		if ($result['state'] == ENVIO_TRANSITO) {
 			$data = [
 				'state' => 'Transito',
-				'imgcabecera' => 'Seguimiento_1120x119px_FB03.png',
-				'imgcuerpo' => '3trackingFB_en-camino.jpg',
+				'imgcabecera' => 'Seguimiento_1120x119px_FB03.jpg',
+				'imgcuerpo' => '',
 				'text' => 'Tu pedido ya está llegando a tu ciudad por lo que en 24-48 horas te será entregado, si no fuera así, por favor llámanos para solucionarlo!'
 			];
 		}
@@ -210,8 +210,8 @@ class TrackingController extends BaseController
 		if ($result['state'] == ENVIO_REPARTO) {
 			$data = [
 				'state' => 'Reparto',
-				'imgcabecera' => 'Seguimiento_1120x119px_FB04.png',
-				'imgcuerpo' => '4trackingFB_en-reparto.jpg',
+				'imgcabecera' => 'Seguimiento_1120x119px_FB04.jpg',
+				'imgcuerpo' => '',
 				'text' => 'Durante el día de hoy te debería ser entregado tu pedido.<br/><br/>
 				Gracias por tu confianza!'
 			];
@@ -220,8 +220,8 @@ class TrackingController extends BaseController
 		if ($result['state'] == ENVIO_ENTREGADO) {
 			$data = [
 				'state' => 'Entregado',
-				'imgcabecera' => 'Seguimiento_1120x119px_FB05.png',
-				'imgcuerpo' => '5trackingFB_entregado.jpg',
+				'imgcabecera' => 'entregado.jpg',
+				'imgcuerpo' => '',
 				'text' => 'Muchas gracias por confiar en nosotros, esperamos verte de nuevo muy pronto!'
 			];
 		}
@@ -229,8 +229,8 @@ class TrackingController extends BaseController
 		if ($result['state'] == ENVIO_INCIDENCIA) {
 			$data = [
 				'state' => 'Incidencia',
-				'imgcabecera' => 'Seguimiento_1120x119px_FB01.png',
-				'imgcuerpo' => '6trackingFB_incidencia.jpg',
+				'imgcabecera' => 'Seguimiento_1120x119px_FB01.jpg',
+				'imgcuerpo' => '',
 				'text' => 'Algo ha sucedido 😟 <br/><br/>
 				El transportista ha marcado tu pedido con alguna incidencia por lo que se pondrá en contacto contigo para acordar una nueva entrega. ',
 				'state_text' => $result['text']

@@ -31,11 +31,6 @@
         <a href="https://www.farmaciabarata.es/"><img class="logo" src="<?php echo base_url(); ?>/assets/img/logo-farmaciabarata.svg" /></a>
         <a class="micuenta" href="https://www.farmaciabarata.es/mi-cuenta">Mi cuenta</a>
       </div>
-      <div class="row header desktop">
-      <p class="carrier">
-          Pedido <?php echo $reference; ?> --- Transportista <?php echo $carrier; ?>: <?php echo $shipping_number; ?>
-        </p>
-      </div>
       <div class="row header mobile">
         <div class="column">
           <a href="https://www.farmaciabarata.es/"><img class="logo" src="<?php echo base_url(); ?>/assets/img/logo-farmaciabarata.svg" /></a>
@@ -43,11 +38,11 @@
         <div class="column">
           <a class="micuenta" href="https://www.farmaciabarata.es/mi-cuenta">Mi cuenta</a>
         </div>
-        <div class="column">
-          <p class="carrier">
+      </div>
+      <div class="content">
+         <p class="carrier">
             Pedido <?php echo $reference; ?> --- Transportista <?php echo $carrier; ?>: <?php echo $shipping_number; ?>
           </p>
-        </div>
       </div>
       <img class="cabecera" src="<?php echo base_url(); ?>/assets/img/tracking/<?php echo $imgcabecera; ?>" />
       <img class="cuerpo" src="<?php echo base_url(); ?>/assets/img/tracking/<?php echo $imgcuerpo; ?>" />
