@@ -26,6 +26,7 @@
 
 #form-search-top.form-search-top {
   height: 40px;
+  font-size: 18px !important;
 }
 
 /*pantalla notch*/
@@ -75,6 +76,10 @@ input#search-topapp {
 /*menu cabecera*/
 #off-canvas {
   max-width: 100% !important;
+}
+
+.navmenu-default .navmenu-nav>li>a, .navbar-default .navbar-offcanvas .navmenu-nav>li>a {
+  padding: 14px 16px !important;
 }
 
 /*slider*/
