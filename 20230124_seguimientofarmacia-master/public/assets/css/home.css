@@ -56,9 +56,9 @@ img {
 .title {
   color: #016aa6;
   font-weight: 600;
-  margin-top: 32px;
+  margin-top: 0;
   margin-bottom: 0;
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .row {
@@ -112,7 +112,6 @@ img {
   text-align: left;
   border-radius: 8px;
   padding: 24px;
-  margin-top: 32px;
 }
 
 #sec-one form h1 {
