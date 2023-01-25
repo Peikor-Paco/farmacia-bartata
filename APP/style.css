@@ -78,7 +78,8 @@ input#search-topapp {
   max-width: 100% !important;
 }
 
-.navmenu-default .navmenu-nav>li>a, .navbar-default .navbar-offcanvas .navmenu-nav>li>a {
+.navmenu-default .navmenu-nav>li>a,
+.navbar-default .navbar-offcanvas .navmenu-nav>li>a {
   padding: 14px 16px !important;
 }
 
@@ -126,9 +127,11 @@ h1.title-carta {
   font-size: 18px;
   font-weight: 600;
 }
+
 .scroll-horizontal .col-phone-horizontal {
   margin-top: 16px;
 }
+
 .scroll-horizontal .col-phone-horizontal .card-home {
   width: 105px;
   padding: 0px;
@@ -143,10 +146,15 @@ h1.title-carta {
 h2.list-title {
   font-weight: 500;
 }
+
 .card-home {
   margin-bottom: 0;
 }
 
 .card-home .grid figure {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
+}
+
+.sin-margenes .card.card-home {
+  margin-bottom: 16px;
 }
