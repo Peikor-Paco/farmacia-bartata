@@ -1,0 +1,75 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Farmacia Barata - Seguimiento de pedidos</title>
+    <meta name="description" content="Haz seguimiento de los pedidos realizados en farmaciabarata.es">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../public/assets/css/home.css">
+    <link rel="stylesheet" type="text/css" href="../public/assets/css/alerts.css">
+
+</head>
+
+<body data-loom-blur-type="NONE">
+
+    <section id="sec-one">
+        <div class="container top-container" role="img" aria-label="Localiza dónde está tu pedido">
+            <div class="text-center">
+                <a href="https://www.farmaciabarata.es/">
+                    <img class="logo" src="https://seguimiento.farmaciabarata.es/assets/img/logo-farmaciabarata.svg">
+                </a>
+                <h1 class="title">¿Quieres saber donde esta tu pedido?</h1>
+                <div class="text-center">
+                    <img class="cabecera" src="../public/assets/img/tracking/entregado.jpg">
+                </div>
+            </div>
+
+            <form action="https://seguimiento.farmaciabarata.es/index.php/tracking" method="post"
+                accept-charset="utf-8">
+                <div class="row">
+                    <h1>Localiza donde está tu pedido</h1>
+                </div>
+
+                <div class="row">
+                    <div class="alert alert-danger">
+                        Referencia de pedido no válida </div>
+                </div>
+
+
+                <a href="/">Consultar otro pedido</a>
+            </form>
+            <form action="https://seguimiento.farmaciabarata.es/index.php/tracking" method="post"
+                accept-charset="utf-8">
+                <div class="row">
+                    <h1>Localiza donde está tu pedido</h1>
+                </div>
+
+
+
+                <div class="row">
+                    <p>Introduce la referencia de pedido o tu teléfono para comprobar el estado</p>
+                </div>
+                <div class="row">
+                    <input type="text" name="reference" value="" id="reference" placeholder="Referencia"
+                        class="hiddenemail">
+                </div>
+                <div class="row">
+                    <input type="tel" name="phone" value="" id="phone" placeholder="Teléfono" class="hiddenphone"
+                        pattern="[0-9]{9}">
+                </div>
+                <div class="row">
+                    <input type="submit" name="submit" value="Localizar" id="submit">
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

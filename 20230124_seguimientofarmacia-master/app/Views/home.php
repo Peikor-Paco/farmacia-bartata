@@ -25,6 +25,7 @@
 
   <section id="sec-one">
     <div class="container top-container" role="img" aria-label="Localiza dónde está tu pedido">
+      ¿Quieres saber donde esta tu pedido?
     <?php echo form_open('tracking'); ?>
         <div class="row">
           <h1>Localiza donde está tu pedido</h1>
@@ -79,7 +80,7 @@
           ?>
         </div>
         <div class="row">
-          <?php echo form_submit(['id' => 'submit', 'name' => 'submit'], 'Enviar'); ?>
+          <?php echo form_submit(['id' => 'submit', 'name' => 'submit'], 'Localizar'); ?>
         </div>
 
       <?php else: ?>
