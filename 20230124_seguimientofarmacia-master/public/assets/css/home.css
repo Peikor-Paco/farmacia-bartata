@@ -25,10 +25,18 @@ section {
   padding-top: 24px;
 }
 
+.content {
+  margin-top: 24px;
+}
+
 .flex-item {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
+}
+
+a {
+  color: #FFFFFF;
 }
 
 .logo {
@@ -52,6 +60,12 @@ img {
   font-size: 22px;
 }
 
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
 .subtitle {
   font-size: 16px;
   line-height: 1.5;
@@ -67,26 +81,47 @@ img {
   min-height: 100vh;
 }
 
+#sec-one .header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sec-one .header.mobile {
+  display: none;
+}
+
+#sec-one .logo {
+  max-width: 130px;
+}
+
+#sec-one .micuenta {
+  font-weight: 500;
+  color: #016aa6;
+  font-size: 15px;
+}
+
 #sec-one form {
-  border: 1px solid #5BAFBD;
+  background:#016aa6;
+  border: 1px solid #016aa6;
   color: #FFFFFF;
-  width: 60vh;
+  width: 400px;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: left;
   border-radius: 8px;
   padding: 24px;
+  margin-top: 32px;
 }
 
-#sec-one form h1{
+#sec-one form h1 {
     font-size: 22px;
-    font-weight: normal;
+    font-weight: 500;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-#sec-one form p{
+#sec-one form p {
     font-size: 15px;
     margin-bottom: 30px;
 }
@@ -110,24 +145,32 @@ input {
 
 #sec-one #submit {
   width: 60%;
-  height: 3vh;
-  margin-top: 20px;
+  height: 50px;
+  margin-top: 24px;
   text-align: center;
-  background: #FFFFFF;
-  border: 1px solid #016aa6;
-  border-radius: 0 3px 3px 0;
-  color: #016aa6;
+  background: #F5A404;
+  border: 1px solid #F5A404;
+  color: #FFFFFF;
+  font-weight: 500;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 600px) {
+  .logo {
+    max-width: 120px;
+  }
+  .title {
+    font-size: 20px;
+    margin-top: 16px;
+}
   #sec-one form {
     width: auto;
   }
 
   #sec-one #submit {
-    width: auto;
+    width: 100%;
   }
 }
 
