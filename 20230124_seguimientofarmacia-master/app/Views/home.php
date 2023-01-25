@@ -27,12 +27,12 @@
     <div class="container top-container" role="img" aria-label="Localiza dónde está tu pedido">
       ¿Quieres saber donde esta tu pedido?
     <?php echo form_open('tracking'); ?>
-        <div class="row">
+        <div>
           <h1>Localiza donde está tu pedido</h1>
         </div>
 
         <?php if (isset($error)) : ?>
-          <div class="row">
+          <div>
             <div class="alert alert-danger">
               <?= $error; ?>
             </div>
@@ -40,7 +40,7 @@
         <?php endif; ?>
 
         <?php if (isset($warning)) : ?>
-          <div class="row">
+          <div>
             <div class="alert alert-warning">
               <?= $warning; ?>
             </div>
@@ -48,10 +48,10 @@
         <?php endif; ?>
 
       <?php if (!isset($warning) && !isset($error)) : ?>
-        <div class="row">
+        <div>
           <p>Introduce la referencia de pedido o tu teléfono para comprobar el estado</p>
         </div>
-        <div class="row">
+        <div>
           <?php
           $data = array(
             'type'  => 'text',
@@ -64,7 +64,7 @@
           echo form_input($data);
           ?>
         </div>
-        <div class="row">
+        <div>
           <?php
           $data = array(
             'type'  => 'text',
@@ -79,7 +79,7 @@
           echo form_input($data);
           ?>
         </div>
-        <div class="row">
+        <div>
           <?php echo form_submit(['id' => 'submit', 'name' => 'submit'], 'Localizar'); ?>
         </div>
 
